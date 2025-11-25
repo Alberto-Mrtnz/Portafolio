@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potafolio</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: 'Roboto';
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="z-40 bg-[#536D82] fixed top-10 rounded-full justify-self-center shadow-2xl">
+        <div class="my-2">
+            <a class="rounded-full text-white hover:bg-[#9DB2BF] py-2 px-4" href="index.html">About me</a>
+            <a class="rounded-full text-white hover:bg-[#9DB2BF] py-2 px-4"
+                href="certifications.html">Certifications</a>
+            <a class="rounded-full text-white hover:bg-[#9DB2BF] py-2 px-4" href="volunteers.html">Volunteers</a>
+            <a class="rounded-full text-white hover:bg-[#9DB2BF] py-2 px-4" href="proyects.html">Proyects</a>
+            <a class="rounded-full text-white hover:bg-[#9DB2BF] py-2 px-4" href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="pb-40 relative bg-gradient-to-t from-[#000000] to-[#26374D] flex flex-col place-items-center">
+
+        <h1
+            class="mt-14 absolute font-[Unbounded] text-[180px] bg-gradient-to-r from-[#DDE6ED]/10 to-[#9DB2BF]/10 bg-clip-text text-transparent">
+            Proyects</h1>
+        <p
+            class="pt-52 text-lg text-center font-[Unbounded] bg-gradient-to-b from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent mx-52">
+            Main technological works that have been done in recent years and have generated new learning.
+        </p>
+    </div>
+
+    <div class="bg-gradient-to-b from-[#000000] to-[#26374D] flex flex-col">
+        <div class="grid grid-cols-2 min-h-screen">
+            <div class="col-span-1 ml-16 my-auto">
+                <h1
+                    class="font-[Unbounded] text-2xl bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                    Hackathon</h1>
+                <h1
+                    class="font-[Unbounded] text-3xl bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                    SV AI-Healt</h1>
+                <p class="mr-2 mt-2 text-[#DDE6ED] text-md font-light">Hackathon was a project developed in the
+                    ¡Supérate! program with the aim of providing an introduction to the process of developing a digital
+                    project in teams.</p>
+                <div class="flex flex-col">
+                    <div class="flex flex-row mt-6">
+                        <div class="flex flex-col w-80 mr-8">
+                            <h1
+                                class="font-[Unbounded] bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                                App</h1>
+                            <p class="mr-2 mt-1 text-[#DDE6ED] text-sm font-light">It was SV AI-Health, an application
+                                that allows users to detect allergenic ingredients in each product they scan. They can
+                                also access a list of products with specifications of their ingredients and possible
+                                allergens they may cause. </p>
+                        </div>
+                        <div class="flex flex-col w-80">
+                            <h1
+                                class="font-[Unbounded] bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                                Development</h1>
+                            <p class="mr-2 mt-1 text-[#DDE6ED] text-sm font-light">The project was carried out through
+                                Power Apps, where all its functionalities, such as the database, were built using other
+                                Microsoft Office apps.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row mt-6">
+                        <div class="flex flex-col w-80 mr-8">
+                            <h1
+                                class="font-[Unbounded] bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                                Role</h1>
+                            <p class="mr-2 mt-1 text-[#DDE6ED] text-sm font-light">App development</p>
+                        </div>
+                        <div class="flex flex-col w-80">
+                            <h1
+                                class="font-[Unbounded] bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                                Duration</h1>
+                            <p class="mr-2 mt-1 text-[#DDE6ED] text-sm font-light">2 months</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-1 my-auto">
+                <img class="w-3/4 h-9/10 flex items-center pl-12" src="images/sv.png" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="grid grid-cols-2 min-h-screen place-items-center">
+            <div class="col-span-1">
+                <swiper-container class="mySwiper h-screen" direction="vertical" loop="true" autoplay-delay="4000"
+                    centered-slides="true" grab-cursor="true">
+                    <swiper-slide class="bg-center flex justify-center items-center">
+                        <img src="images/Logos Eventi.png" alt="" class="w-3/4 object-cover">
+                    </swiper-slide>
+                    <swiper-slide class="bg-center flex justify-center items-center">
+                        <img src="images/sitio.png" alt="" class="w-3/4 object-cover">
+                    </swiper-slide>
+                    <swiper-slide class="bg-center flex justify-center items-center">
+                        <img src="images/survey.png" alt="" class="w-3/4 object-cover">
+                    </swiper-slide>
+                </swiper-container>
+
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+            </div>
+
+            <div class="col-span-1 mr-48 ml-12 my-auto">
+                <h1
+                    class="font-[Unbounded] text-2xl bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                    Expo de logros</h1>
+                <h1
+                    class="font-[Unbounded] text-3xl bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                    Eventi</h1>
+                <p class="mr-2 mt-2 text-[#DDE6ED] text-md font-light">Expo de Logros was a project in which a digital
+                    solution to a problem was developed. During this process, surveys and interviews were conducted to
+                    investigate the problem further, then a website was developed to provide a solution to the problem,
+                    and finally it was presented at an expo with different projects.</p>
+                <div class="flex flex-col">
+                    <div class="flex flex-row mt-6">
+                        <div class="flex flex-col w-80 mr-8">
+                            <h1
+                                class="font-[Unbounded] bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                                App</h1>
+                            <p class="mr-2 mt-1 text-[#DDE6ED] text-sm font-light">Eventi, a website where users can
+                                explore all kinds of services related to any celebration or event, and can also plan
+                                their celebration through boards that allow them to keep every element of the
+                                celebration organized.</p>
+                        </div>
+                        <div class="flex flex-col w-80">
+                            <h1
+                                class="font-[Unbounded] bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                                Development</h1>
+                            <p class="mr-2 mt-1 text-[#DDE6ED] text-sm font-light">Using programming languages such as
+                                PHP, Laravel, JavaScript, and some libraries and frameworks such as Tailwind CSS and
+                                Alpine JS. The database was created in MySQL.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row mt-6">
+                        <div class="flex flex-col w-80 mr-8">
+                            <h1
+                                class="font-[Unbounded] bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                                Role</h1>
+                            <p class="mr-2 mt-1 text-[#DDE6ED] text-sm font-light">UX/UI Designer and Front-end
+                                developer</p>
+                        </div>
+                        <div class="flex flex-col w-80">
+                            <h1
+                                class="font-[Unbounded] bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                                Duration</h1>
+                            <p class="mr-2 mt-1 text-[#DDE6ED] text-sm font-light">3 months</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="grid grid-cols-2 min-h-screen place-items-center">
+            <div class="col-span-1 mr-12 ml-48 my-auto">
+                <h1
+                    class="font-[Unbounded] text-2xl bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                    Expo-Tech</h1>
+                <h1
+                    class="font-[Unbounded] text-3xl bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                    TrackMate</h1>
+                <p class="mr-2 mt-2 text-[#DDE6ED] text-md font-light">Expo Tech was a project that focused on
+                    developing technological projects with the potential to monetize and respond to real problems, which
+                    were then presented at a Shark Tank event with judges from multiple national and international
+                    technology companies.</p>
+                <div class="flex flex-col">
+                    <div class="flex flex-row mt-6">
+                        <div class="flex flex-col w-80 mr-8">
+                            <h1
+                                class="font-[Unbounded] bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                                App</h1>
+                            <p class="mr-2 mt-1 text-[#DDE6ED] text-sm font-light">Track Mate, an app that connects
+                                vehicle owners with mechanics, providing benefits to both parties. It allows users to
+                                keep track of their vehicles and easily contact their preferred mechanic, while
+                                mechanics can manage their workshops.</p>
+                        </div>
+                        <div class="flex flex-col w-80">
+                            <h1
+                                class="font-[Unbounded] bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                                Development</h1>
+                            <p class="mr-2 mt-1 text-[#DDE6ED] text-sm font-light">The first phase consisted of
+                                presenting the visual elements of the brand and the programming part of the project. The
+                                second phase consisted of giving a general presentation on the entire project in a Shark
+                                Tank format.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row mt-6">
+                        <div class="flex flex-col w-80 mr-8">
+                            <h1
+                                class="font-[Unbounded] bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                                Role</h1>
+                            <p class="mr-2 mt-1 text-[#DDE6ED] text-sm font-light">Front-end developer</p>
+                        </div>
+                        <div class="flex flex-col w-80">
+                            <h1
+                                class="font-[Unbounded] bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                                Duration</h1>
+                            <p class="mr-2 mt-1 text-[#DDE6ED] text-sm font-light">1 month</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-1">
+                <swiper-container class="mySwiper h-screen" direction="vertical" loop="true" autoplay-delay="3000"
+                    centered-slides="true" grab-cursor="true">
+                    <swiper-slide class="bg-center flex justify-center items-center">
+                        <img src="land.png" alt="" class="w-2/3 h-2/3 object-cover">
+                    </swiper-slide>
+                    <swiper-slide class="bg-center flex justify-center items-center">
+                        <img src="land.png" alt="" class="w-2/3 h-2/3 object-cover">
+                    </swiper-slide>
+                    <swiper-slide class="bg-center flex justify-center items-center">
+                        <img src="land.png" alt="" class="w-2/3 h-2/3 object-cover">
+                    </swiper-slide>
+                </swiper-container>
+
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

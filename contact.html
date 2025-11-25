@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {  
+            font-family: 'Roboto';
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="z-40 bg-[#536D82] fixed top-10 rounded-full justify-self-center shadow-2xl">
+        <div class="my-2">
+            <a class="rounded-full text-white hover:bg-[#9DB2BF] py-2 px-4" href="index.html">About me</a>
+            <a class="rounded-full text-white hover:bg-[#9DB2BF] py-2 px-4"
+                href="certifications.html">Certifications</a>
+            <a class="rounded-full text-white hover:bg-[#9DB2BF] py-2 px-4" href="volunteers.html">Volunteers</a>
+            <a class="rounded-full text-white hover:bg-[#9DB2BF] py-2 px-4" href="proyects.html">Proyects</a>
+            <a class="rounded-full text-white hover:bg-[#9DB2BF] py-2 px-4" href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="relative min-h-screen bg-gradient-to-t from-[#000000] to-[#26374D] flex-col">
+
+        <h1
+            class="absolute font-[Unbounded] pt-6 w-full text-center text-[190px] font-semibold bg-gradient-to-r from-[#DDE6ED]/5 to-[#9DB2BF]/5 bg-clip-text text-transparent">
+            Contact</h1>
+
+        <div class="pt-48 ml-28 grid grid-cols-2">
+            <div class="col-span-1">
+                <h1
+                    class="mb-1 text-2xl font-[Unbounded] bg-gradient-to-b from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                    Get in touch</h1>
+                <p class="text-[#DDE6ED]">If you have any comments, please <br> do not hesitate to contact me via
+                    networks <br> or this form.</p>
+
+                <div class="mr-28 mt-12 flex flex-row backdrop-blur-3xl bg-[#DDE6ED]/15 py-3 px-4 rounded-lg">
+                    <img class="w-10" src="image.png" alt="">
+                    <div class="ml-4 flex-row">
+                        <h1
+                            class="font-[Unbounded] bg-gradient-to-b from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                            Email</h1>
+                        <p class="text-[#DDE6ED]">alberto@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="mr-28 mt-6 flex flex-row backdrop-blur-3xl bg-[#DDE6ED]/15 py-3 px-4 rounded-lg">
+                    <img class="w-10" src="image.png" alt="">
+                    <div class="ml-4 flex-row">
+                        <h1
+                            class="font-[Unbounded] bg-gradient-to-b from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                            Phone</h1>
+                        <p class="text-[#DDE6ED]">+503 0000-0000</p>
+                    </div>
+                </div>
+
+                <div class="mr-28 mt-6 flex flex-row backdrop-blur-3xl bg-[#DDE6ED]/15 py-3 px-4 rounded-lg">
+                    <img class="w-10" src="image.png" alt="">
+                    <div class="ml-4 flex-row">
+                        <h1
+                            class="font-[Unbounded] bg-gradient-to-b from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                            LinkInd</h1>
+                        <p class="text-[#DDE6ED]">albertoM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-1">
+                <div class="mr-28 mt-6">
+                    <p class="text-[#DDE6ED] mb-1 text-lg">Name</p>
+                    <input
+                        class="text-white backdrop-blur-3xl bg-[#DDE6ED]/15 rounded-lg px-3 py-3 italic text-md w-full"
+                        placeholder="Your name" type="text">
+
+                    <p class="text-[#DDE6ED] mb-1 mt-4 text-lg">Email</p>
+                    <input
+                        class="text-white backdrop-blur-3xl bg-[#DDE6ED]/15 rounded-lg px-3 py-3 italic text-md w-full"
+                        placeholder="Your email" type="text">
+
+                    <p class="text-[#DDE6ED] mb-1 mt-4 text-lg">Message</p>
+                    <input
+                        class="text-white backdrop-blur-3xl bg-[#DDE6ED]/15 rounded-lg px-3 py-6 italic text-md w-full"
+                        placeholder="Type your message" type="text">
+
+                    <button
+                        class="font-[Unbounded] mt-6 py-4 w-full text-sm bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] hover:bg-gradient-to-r from-[#DDE6ED] to-[#9DB2BF] hover:-translate-y-1 hover:scale-110 transition duration-150 ease-in-out rounded-lg">Submit</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
