@@ -12,6 +12,8 @@
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <style>
         body {
             font-family: 'Roboto';
@@ -33,9 +35,10 @@
         </div>
     </nav>
 
-    <div class="pb-40 relative bg-gradient-to-t from-[#000000] to-[#26374D] flex flex-col place-items-center">
+    <div x-data="{ show: false }" x-init="setTimeout(() => show = true, 200)"
+    class="pb-40 relative bg-gradient-to-t from-[#000000] to-[#26374D] flex flex-col place-items-center">
 
-        <h1
+        <h1 x-show="show" x-transition:enter="transition ease-out duration-[2s]" x-transition:enter-start="opacity-0 translate-y-20 scale-50" x-transition:enter-end="opacity-100 translate-y-0 scale-100"
             class="mt-14 absolute font-[Unbounded] text-[180px] bg-gradient-to-r from-[#DDE6ED]/10 to-[#9DB2BF]/10 bg-clip-text text-transparent">
             Proyects</h1>
         <p
@@ -44,7 +47,7 @@
         </p>
     </div>
 
-    <div class="bg-gradient-to-b from-[#000000] to-[#26374D] flex flex-col">
+    <div id="all" class="bg-gradient-to-b from-[#000000] to-[#26374D] flex flex-col">
         <div class="grid grid-cols-2 min-h-screen">
             <div class="col-span-1 ml-28 my-auto">
                 <h1
@@ -238,7 +241,23 @@
 
     </div>
 
+    <script>
+        const items = document.querySelectorAll('#all > *');
+        items.forEach(item => {
+            item.classList.add('opacity-25', 'translate-y-40', 'transition-all', 'duration-[1s]', 'ease-out');
+        });
 
+        const view = new IntersectionObserver(elements => {
+            elements.forEach(object => {
+                if (object.isIntersecting) {
+                    object.target.classList.remove('opacity-0', 'translate-y-0');
+                    object.target.classList.add('opacity-100', 'translate-y-0');
+                    view.unobserve(object.target)
+                }
+            });
+        });
+        items.forEach(item => view.observe(item))
+    </script>
 
 </body>
 

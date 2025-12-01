@@ -12,6 +12,8 @@
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <style>
         body {  
             font-family: 'Roboto';
@@ -33,13 +35,13 @@
         </div>
     </nav>
 
-    <div class="relative min-h-screen bg-gradient-to-t from-[#000000] to-[#26374D] flex-col">
+    <div x-data="{ show: false }" x-init="setTimeout(() => show = true, 200)" class="relative min-h-screen bg-gradient-to-t from-[#000000] to-[#26374D] flex-col">
 
-        <h1
+        <h1 x-show="show" x-transition:enter="transition ease-out duration-[1s]" x-transition:enter-start="opacity-0 translate-y-24 scale-75" x-transition:enter-end="opacity-100 translate-y-0 scale-100"
             class="absolute font-[Unbounded] pt-6 w-full text-center text-[190px] font-semibold bg-gradient-to-r from-[#DDE6ED]/5 to-[#9DB2BF]/5 bg-clip-text text-transparent">
             Contact</h1>
 
-        <div class="pt-48 ml-28 grid grid-cols-2">
+        <div class="pt-40 ml-28 grid grid-cols-2">
             <div class="col-span-1">
                 <h1
                     class="mb-1 text-2xl font-[Unbounded] bg-gradient-to-b from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
@@ -48,31 +50,31 @@
                     networks <br> or this form.</p>
 
                 <div class="mr-28 mt-12 flex flex-row backdrop-blur-3xl bg-[#DDE6ED]/15 py-3 px-4 rounded-lg">
-                    <img class="w-10" src="image.png" alt="">
+                    <img class="w-14" src="images/email.png" alt="">
                     <div class="ml-4 flex-row">
                         <h1
                             class="font-[Unbounded] bg-gradient-to-b from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
                             Email</h1>
-                        <p class="text-[#DDE6ED]">alberto@gmail.com</p>
+                        <p class="text-[#DDE6ED]">@gmail.com</p>
                     </div>
                 </div>
 
                 <div class="mr-28 mt-6 flex flex-row backdrop-blur-3xl bg-[#DDE6ED]/15 py-3 px-4 rounded-lg">
-                    <img class="w-10" src="image.png" alt="">
+                    <img class="w-14" src="images/in.png" alt="">
                     <div class="ml-4 flex-row">
                         <h1
                             class="font-[Unbounded] bg-gradient-to-b from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
-                            Phone</h1>
-                        <p class="text-[#DDE6ED]">+503 0000-0000</p>
+                            LinkedIn</h1>
+                        <p class="text-[#DDE6ED]">perfil</p>
                     </div>
                 </div>
 
                 <div class="mr-28 mt-6 flex flex-row backdrop-blur-3xl bg-[#DDE6ED]/15 py-3 px-4 rounded-lg">
-                    <img class="w-10" src="image.png" alt="">
+                    <img class="w-14" src="images/git.png" alt="">
                     <div class="ml-4 flex-row">
                         <h1
                             class="font-[Unbounded] bg-gradient-to-b from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
-                            LinkInd</h1>
+                            GitHub</h1>
                         <p class="text-[#DDE6ED]">albertoM</p>
                     </div>
                 </div>

@@ -12,6 +12,8 @@
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <style>
         body {
             font-family: 'Roboto';
@@ -34,25 +36,24 @@
     </nav>
 
     <!--Welcome-->
-    <div
-        class="bg-gradient-to-t from-[#000000] to-[#26374D] relative flex flex-col place-items-center justify-center h-screen">
-        <h1
+    <div x-data="{ show: false }" x-init="setTimeout(() => show = true, 200)"
+        class="bg-gradient-to-t from-[#000000] to-[#0C396F] relative flex flex-col place-items-center justify-center h-screen">
+        <h1 x-show="show" x-transition:enter="transition ease-out duration-[2s]" x-transition:enter-start="opacity-0 translate-y-32 scale-75" x-transition:enter-end="opacity-100 translate-y-0 scale-100"
             class="font-[Unbounded] whitespace-pre text-8xl font-bold mb-6 z-0 bg-gradient-to-r from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">WELCOME TO MY</h1>
-        <h1
+        <h1 x-show="show" x-transition:enter="transition ease-out duration-[2s]" x-transition:enter-start="opacity-0 translate-y-32 scale-75" x-transition:enter-end="opacity-100 translate-y-0 scale-100"
             class="font-[Unbounded] z-20 text-7xl font-bold bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
             PERSONAL PORTAFOLIO</h1>
         <img class="w-96 z-10 absolute bottom-0 text-center" src="fotos/screen.png" alt="">
     </div>
 
     <!--Rotate-->
-    <div class="bg-gradient-to-t from-[#000000] to-[#26374D] min-h-screen flex-col flex place-items-center">
-        <h1
-            class="font-[Unbounded] mt-24 text-3xl bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
-            A portafolio to discover information about myself</h1>
-        <h1
-            class="font[Unbounded] mt-1 text-4xl text-[#DDE6ED] bg-gradient-to-r from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent mb-24">
-            sunch as my studies, previous proyects, certifications and more.
-        </h1>
+    <div id="one" class="bg-gradient-to-t from-[#000000] to-[#26374D] min-h-screen flex-col flex place-items-center">
+            <h1 class="font-[Unbounded] mt-24 text-3xl bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent">
+                A portafolio to discover information about myself</h1>
+            <h1
+                class="font[Unbounded] mt-1 text-4xl text-[#DDE6ED] bg-gradient-to-r from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent mb-24">
+                sunch as my studies, previous proyects, certifications and more.
+            </h1>   
         <div class="flex flex-row -space-x-20">
             <img src="images/Ensayo.jpeg" alt=""
                 class="-rotate-[0.25rad] translate-y-8 pr-6 w-50 h-48 rounded-lg shadow-2xl shadow-[#9DB2BF] hover:scale-125 transition duration-150 ease-in-out">
@@ -71,17 +72,18 @@
         </div>
         <h1 class="text-[#DDE6ED] mt-12 text-xl">Look at some pictures!</h1>
         <div class="flex flex-row space-x-6 mt-12 mb-10">
-            <button
+            <button onclick="location.href='#Info'"
                 class="py-3 px-8 text-sm bg-gradient-to-l from-[#DDE6ED] to-[#9DB2BF] hover:bg-[#9DB2BF] hover:-translate-y-1 hover:scale-110 transition duration-150 ease-in-out rounded-full">Information</button>
-            <button
+            <button onclick="location.href='contact.html'"
                 class="py-3 px-8 text-white text-sm bg-gradient-to-r from-[#26374D] to-[#536D82] hover:bg-[#9DB2BF] rounded-full hover:-translate-y-1 hover:scale-110 transition duration-150 ease-in-out">Get
                 in touch</button>
         </div>
     </div>
 
+
     <!--Info-->
     <div class="bg-gradient-to-b from-[#000000] to-[#26374D]">
-        <div class="min-h-screen">
+        <div id="two" class="min-h-screen">
             <div class="justify-center place-items-center flex flex-row">
                 <div class="my-32">
                     <h1
@@ -105,14 +107,12 @@
                     <img src="images/Presentación.jpeg" alt=""
                         class="shadow-2xl shadow-[#9DB2BF] w-56 rounded-lg hover:scale-125 transition duration-150 ease-in-out">
                     <img src="images/lago.jpeg" alt=""
-                        class=" shadow-[#9DB2BF] w-56 rounded-lg translate-y-16 hover:scale-125 transition duration-150 ease-in-out">
-                    <img src="images/foto.jpeg" alt=""
-                        class="shadow-2xl shadow-[#9DB2BF] w-56 rounded-lg translate-y-32 hover:scale-125 transition duration-150 ease-in-out">
+                        class=" shadow-[#9DB2BF] w-60 rounded-lg translate-y-16 hover:scale-125 transition duration-150 ease-in-out">
                     <img src="images/Equipo.jpeg" alt=""
                         class="shadow-2xl shadow-[#9DB2BF] w-56 rounded-lg translate-y-48 hover:scale-125 transition duration-150 ease-in-out">
                 </div>
             </div>
-            <div class="flex-col mt-44">
+            <div class="flex-col mt-52">
                 <h1
                     class="bg-gradient-to-t from-[#DDE6ED] to-[#9DB2BF] bg-clip-text text-transparent font-[Unbounded] font-semibold text-3xl ml-24">
                     Personal experiences</h1>
@@ -179,7 +179,7 @@
             </details>
         </div>
     </div>
-    </div>
+  
 
     <!--footer-->
     <div class="bg-[#536D82] place-items-center flex-col">
@@ -187,12 +187,28 @@
         <p class="mx-44 pb-4 text-center text-[#DDE6ED]">Portfolio with the most relevant information from the last
             three years, including personal details, projects, certifications, courses and awards. Get in touch through
             this website, email or social media.</p>
-        <div class="flex flex-row -space-x-6 pb-6">
-            <img class="w-24 grayscale" src="in.png" alt="">
-            <img class="w-24 grayscale" src="git.png" alt="">
-            <img class="w-24 grayscale" src="in.png" alt="">
+        <div class="flex flex-row pt-4 -space-x-6">
+            <img class="w-48 pb-6" src="images/logos.png" alt="">
         </div>
     </div>
+
+    <script>
+        const items = document.querySelectorAll('#one > *, #two > *, #Info > *');
+        items.forEach(item => {
+            item.classList.add('opacity-25', 'translate-y-32', 'transition-all', 'duration-[1s]', 'ease-out');
+        });
+
+        const view = new IntersectionObserver(elements => {
+            elements.forEach(object => {
+                if (object.isIntersecting) {
+                    object.target.classList.remove('opacity-0', 'translate-y-0');
+                    object.target.classList.add('opacity-100', 'translate-y-0');
+                    view.unobserve(object.target)
+                }
+            });
+        });
+        items.forEach(item => view.observe(item))
+    </script>
 
 
 </body>
